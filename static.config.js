@@ -27,7 +27,7 @@ export default {
           data: contentArray.map(({ data }) => data)
         }),
         children: contentArray.map(({ data, contents }) => ({
-          path: `/components/${data.path}`,
+          path: `/element/${data.path}`,
           getProps: () => ({
             content: contents
           })
