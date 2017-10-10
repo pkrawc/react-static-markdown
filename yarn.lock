@@ -5060,8 +5060,8 @@ react-side-effect@^1.1.0:
     shallowequal "^1.0.1"
 
 react-static@^1.x.x:
-  version "1.0.48"
-  resolved "https://registry.yarnpkg.com/react-static/-/react-static-1.0.48.tgz#b376a3ccb1d599cb24ad5c4c9e29337376b2ce61"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-static/-/react-static-1.2.0.tgz#feee1ff2460edc7ddf2fa7798fbec495d8724a09"
   dependencies:
     autoprefixer "^7.1.4"
     axios "^0.16.2"
