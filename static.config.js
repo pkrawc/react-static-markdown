@@ -17,7 +17,7 @@ export default {
       const { contents } = remarkParser.processSync(content)
       return { data, contents }
     })
-    return [
+    const routes = [
       {
         path: "/"
       },
@@ -34,6 +34,7 @@ export default {
         }))
       }
     ]
+    return routes
   },
   Html: class CustomHtml extends Component {
     render() {

@@ -1,13 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react"
 import { getRouteProps, Route, Link, Switch } from "react-static"
-// import Element from "./Element"
-
-const Element = getRouteProps(({ match, contents }) => (
-  <div className="element">
-    <div dangerouslySetInnerHTML={{ __html: contents }} />
-  </div>
-))
+import Element from "./Element"
 
 export default getRouteProps(({ match, data }) => (
   <section>
