@@ -1,9 +1,8 @@
-import React from "react"
-import { Router, Route, Switch, Redirect, Link } from "react-static"
-import styled, { injectGlobal } from "styled-components"
+import React from 'react'
+import { Router, Link } from 'react-static'
+import styled, { injectGlobal } from 'styled-components'
 
-import Home from "./containers/Home"
-import Docs from "./containers/Docs"
+import Routes from 'react-static-routes'
 
 injectGlobal`
   body {
@@ -26,16 +25,12 @@ export default () => (
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/components">Components</Link>
+            <Link to="/docs">Docs</Link>
           </li>
         </ul>
       </nav>
       <div className="content">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/components" component={Docs} />
-          <Redirect to="/" />
-        </Switch>
+        <Routes />
       </div>
     </Wrapper>
   </Router>

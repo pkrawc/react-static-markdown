@@ -1,16 +1,14 @@
-import React from "react"
-import { getRouteProps, Route, Link, Switch } from "react-static"
-import Element from "./Element"
+import React from 'react'
+import { getRouteProps, Link } from 'react-static'
 
-export default getRouteProps(({ match, data }) => (
+export default getRouteProps(({ data }) => (
   <section>
     <ul>
       {data.map(component => (
         <li key={Math.random()}>
-          <Link to={`/components/${component.path}`}>{component.title}</Link>
+          <Link to={`/docs/${component.path}`}>{component.title}</Link>
         </li>
       ))}
     </ul>
-    <Route path={`${match.url}/:elementId`} component={Element} />
   </section>
 ))
