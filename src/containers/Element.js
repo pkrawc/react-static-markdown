@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "react-static"
+import React from 'react'
+import { getRouteProps, Link } from 'react-static'
 //
 
-const Element = props => (
+const Element = getRouteProps(({ contents }) => (
   <div className="element">
-    <Link to="/components">back</Link>
-    <div dangerouslySetInnerHTML={{ __html: props.contents }} />
+    <Link to="/docs">Go back</Link>
+    <div dangerouslySetInnerHTML={{ __html: contents }} />
   </div>
-)
+))
 
 export default Element
